@@ -18,15 +18,22 @@ public class MyClass {
 		}
 		System.out.println(Arrays.toString(arr));
 		
-		int element=0;
+/*		int min = arr[0];            
+        for (int i = 0; i < l; i++) {              
+           if(arr[i]<min)  
+               min = arr[i];  
+        }  
+*/
+		
+		int min=0;
 		for(int i=0; i<l; i++) {
 			for(int j=i+1; j<l; j++) {
 				if(arr[i]<arr[j]) {
-					element=arr[i];
+					min=arr[i];
 				}
 			}
 		}		
-		System.out.println("Smallest element in array is "+element);
+		System.out.println("Smallest element in array is "+min);
 	}
 
 }
